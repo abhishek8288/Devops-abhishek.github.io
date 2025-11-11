@@ -1,79 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Singh | DevOps Engineer</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script src="https://kit.fontawesome.com/6f3f6ff0e9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <canvas id="bg"></canvas>
 
   <div class="container">
-    <header class="hero fade-in">
-      <!-- 👇 changed from profile.jpg → profile.jpeg -->
-      <img src="profile.jpeg" alt="Abhishek Singh" class="avatar" />
-      <h1 class="fade-in-slow">Abhishek Singh</h1>
-      <h2 class="fade-in-slow">DevOps Engineer</h2>
-      <p class="summary fade-in-slow">
-        3+ years experience in CI/CD, Cloud Infrastructure & Automation.<br>
-        Skilled in AWS, GCP, Azure, Docker, Kubernetes, Terraform, Jenkins & Linux.
+    <div class="left">
+      <img src="profile.jpeg" alt="Abhishek Singh" class="profile-pic">
+    </div>
+
+    <div class="right">
+      <h1>Abhishek Singh</h1>
+      <h2>DevOps Engineer</h2>
+      <p>
+        🚀 Passionate DevOps Engineer with <b>3 years of experience</b> in automating and managing cloud infrastructure.<br>
+        Skilled in <b>Jenkins, Docker, Kubernetes, Linux, Terraform</b>.<br>
+        Cloud Expertise: <b>AWS (2+ years)</b>, <b>GCP (1 year)</b>, <b>Azure (1 year)</b>.
       </p>
 
-      <div class="contact fade-in-slow">
-        <a href="mailto:Abhishek84277@gmail.com"><i class="fas fa-envelope"></i> Abhishek84277@gmail.com</a><br>
-        <a href="https://www.linkedin.com/in/abhishek-singh-809755170/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
-        <a href="https://github.com/abhishek8288" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <div class="buttons">
+        <a href="mailto:Abhishek84277@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/abhishek-singh-809755170/" target="_blank" class="btn linkedin"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
-    </header>
 
-    <section class="skills fade-in">
-      <h3>Core Technologies</h3>
-      <div class="icons">
-        <i class="fab fa-aws"></i>
-        <i class="fab fa-docker"></i>
-        <i class="fab fa-kubernetes"></i>
-        <i class="fas fa-code-branch"></i>
-        <i class="fab fa-linux"></i>
-        <i class="fas fa-cogs"></i>
-        <i class="fab fa-terraform"></i>
-      </div>
-    </section>
-
-    <section class="projects fade-in">
-      <h3>Highlighted Projects</h3>
-      <div class="card-grid">
-        <div class="card">
-          <h4>CI/CD Pipeline Automation</h4>
-          <p>Built Jenkins pipeline integrated with GitHub, Docker, and Kubernetes for automated deployments on AWS EKS.</p>
-        </div>
-        <div class="card">
-          <h4>Infrastructure as Code</h4>
-          <p>Developed reusable Terraform modules for provisioning compute, networking, and storage across AWS and GCP.</p>
-        </div>
-        <div class="card">
-          <h4>Monitoring & Logging</h4>
-          <p>Set up Prometheus, Grafana, and Cloud Logging for multi-cloud environments improving observability and uptime.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="certifications fade-in">
-      <h3>Certifications</h3>
-      <ul>
-        <li>GCP Associate Cloud Engineer</li>
-        <li>AWS Solution Architect Associate</li>
-        <li>Microsoft Azure Fundamentals</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>© 2025 Abhishek Singh | DevOps Portfolio</p>
-    </footer>
+      <p class="github"><i class="fab fa-github"></i> abhishek8288</p>
+    </div>
   </div>
 
   <script src="script.js"></script>

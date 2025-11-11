@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abhishek Singh | DevOps Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -13,87 +14,160 @@
     }
 
     body {
-      height: 100vh;
-      background: linear-gradient(135deg, #141e30, #243b55);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
+      background: radial-gradient(circle at top left, #0f2027, #203a43, #2c5364);
       color: #fff;
+      overflow-x: hidden;
+      min-height: 100vh;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-      backdrop-filter: blur(12px);
+    header {
+      padding: 30px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      backdrop-filter: blur(8px);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #00eaff;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      color: #eee;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #00eaff;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
-      padding: 40px;
-      width: 340px;
-      transform: perspective(1000px) rotateY(0deg);
-      transition: transform 0.4s ease;
+      padding: 100px 20px;
     }
 
-    .card:hover {
-      transform: perspective(1000px) rotateY(10deg);
-    }
-
-    h1 {
-      font-size: 1.8em;
+    .hero h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
       margin-bottom: 10px;
     }
 
-    h2 {
-      color: #00bcd4;
+    .hero h3 {
       font-weight: 400;
+      color: #00eaff;
+      font-size: 1.2rem;
       margin-bottom: 20px;
     }
 
-    p {
-      font-size: 0.95em;
-      margin-bottom: 20px;
+    .hero p {
+      max-width: 600px;
+      font-size: 1rem;
+      color: #ccc;
       line-height: 1.6;
     }
 
-    .skills {
-      margin-bottom: 20px;
+    .section {
+      padding: 80px 50px;
+      text-align: center;
     }
 
-    .skills span {
-      display: inline-block;
-      background: rgba(255, 255, 255, 0.2);
-      padding: 5px 10px;
-      margin: 4px;
-      border-radius: 6px;
-      font-size: 0.85em;
+    .section h2 {
+      font-size: 1.8rem;
+      color: #00eaff;
+      margin-bottom: 40px;
     }
 
-    .socials a {
-      color: #fff;
+    .skills, .certs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills span, .certs span {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 10px 18px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 0.95rem;
+      transition: 0.3s ease;
+    }
+
+    .skills span:hover, .certs span:hover {
+      transform: translateY(-3px);
+      background: rgba(0, 234, 255, 0.15);
+      border-color: #00eaff;
+    }
+
+    .contact {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .contact a {
       text-decoration: none;
-      font-size: 1.3em;
-      margin: 0 10px;
-      transition: color 0.3s ease;
+      color: #fff;
+      font-size: 1.3rem;
+      transition: 0.3s ease;
     }
 
-    .socials a:hover {
-      color: #00bcd4;
+    .contact a:hover {
+      color: #00eaff;
     }
 
     footer {
-      position: absolute;
-      bottom: 10px;
-      font-size: 0.8em;
-      opacity: 0.7;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.8rem;
+      color: #999;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
+
+    /* Floating Glow Animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .hero h2, .hero h3 {
+      animation: float 4s ease-in-out infinite;
+    }
+
   </style>
 </head>
 <body>
-  <div class="card">
+  <header>
     <h1>Abhishek Singh</h1>
-    <h2>DevOps Engineer</h2>
-    <p>3 years of experience in CI/CD automation, cloud deployment, and infrastructure as code.</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero" id="about">
+    <h2>DevOps Engineer</h2>
+    <h3>3+ Years of Experience</h3>
+    <p>
+      I design, automate, and manage scalable cloud infrastructures using AWS, GCP, and Azure. 
+      Skilled in CI/CD, containerization, and infrastructure as code — turning manual ops into streamlined pipelines.
+    </p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2>Tech Stack & Tools</h2>
     <div class="skills">
       <span>GitHub</span>
       <span>Jenkins</span>
@@ -104,19 +178,30 @@
       <span>AWS</span>
       <span>GCP</span>
       <span>Azure</span>
+      <span>CI/CD</span>
+      <span>Monitoring</span>
+      <span>Cloud Infra Automation</span>
     </div>
+  </section>
 
-    <p><strong>Certifications:</strong><br>
-      GCP Associate • AWS Solutions Architect • Azure Fundamentals
-    </p>
-
-    <div class="socials">
-      <a href="https://github.com/abhishek8288" target="_blank">🐙</a>
-      <a href="https://www.linkedin.com/in/abhishek-singh-809755170/" target="_blank">💼</a>
-      <a href="mailto:abhishek84277@gmail.com">📧</a>
+  <section class="section" id="certs">
+    <h2>Certifications</h2>
+    <div class="certs">
+      <span>GCP Associate Engineer</span>
+      <span>AWS Solutions Architect</span>
+      <span>Azure Fundamentals</span>
     </div>
-  </div>
+  </section>
 
-  <footer>© 2025 Abhishek Singh | Crafted with 💙 & DevOps Magic</footer>
+  <section class="section" id="contact">
+    <h2>Connect with Me</h2>
+    <div class="contact">
+      <a href="mailto:abhishek84277@gmail.com">📧 Email</a>
+      <a href="https://github.com/abhishek8288" target="_blank">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/abhishek-singh-809755170/" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>© 2025 Abhishek Singh | DevOps Engineer | All rights reserved.</footer>
 </body>
 </html>

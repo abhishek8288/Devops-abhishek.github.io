@@ -29,12 +29,13 @@ body {
 }
 
 .profile-photo {
-  width: 180px; /* smaller size */
-  height: 180px;
+  width: 130px; /* smaller size */
+  height: 130px;
   border-radius: 50%;
   border: 3px solid #00bcd4;
-  box-shadow: 0 0 30px rgba(0, 188, 212, 0.5);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.5);
   animation: float 3s ease-in-out infinite;
+  object-fit: cover; /* keeps perfect circle even if photo not square */
 }
 
 .info {

@@ -6,7 +6,7 @@
   <title>Abhishek Singh | DevOps Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Real-time experience calculation
+    // Real-time experience since June 2022
     function calculateExperience() {
       const startDate = new Date("2022-06-01");
       const now = new Date();
@@ -15,21 +15,23 @@
       return years.toFixed(1);
     }
     window.onload = () => {
-      document.getElementById("exp").innerText = calculateExperience();
+      const exp = calculateExperience();
+      document.getElementById("exp").innerText = exp;
+      document.getElementById("exp2").innerText = exp;
     };
   </script>
 </head>
 
 <body>
+  <!-- Header -->
   <header>
     <h2 class="logo">Abhishek Singh</h2>
     <nav>
       <a href="#about" class="nav-link">About</a>
-      <a href="mailto:abhishek84277@gmail.com" class="nav-link">Email</a>
-      <a href="https://www.linkedin.com/in/abhishek-singh-809755170/" target="_blank" class="nav-link">LinkedIn</a>
     </nav>
   </header>
 
+  <!-- Hero Section -->
   <main>
     <div class="container">
       <div class="profile">
@@ -38,37 +40,4 @@
 
       <div class="info">
         <h1>Hi, I'm <span>Abhishek Singh</span></h1>
-        <h2>DevOps Engineer</h2>
-        <p class="exp">Experience: <span id="exp"></span> years (June 2022 - Present)</p>
-
-        <p class="summary">
-          A skilled <strong>DevOps Engineer</strong> with hands-on expertise in <strong>GCP</strong>, <strong>AWS</strong>,
-          and <strong>Azure</strong>. Experienced in automating cloud infrastructure using 
-          <strong>Terraform, Jenkins, Docker, Kubernetes</strong> and CI/CD pipelines to deliver secure,
-          scalable systems.
-        </p>
-      </div>
-    </div>
-  </main>
-
-  <section id="about" class="about">
-    <h3>About Me</h3>
-    <p>
-      Over <span id="exp2"></span> years of industry experience, building and maintaining DevOps pipelines 
-      across multi-cloud environments. I thrive on automating repetitive tasks, monitoring system reliability,
-      and creating efficient cloud solutions that scale effortlessly.
-    </p>
-    <p>
-      My expertise includes <strong>infrastructure-as-code, CI/CD pipelines, container orchestration, and 
-      performance monitoring</strong>. I’m currently exploring advanced GCP automation and hybrid cloud 
-      deployment strategies.
-    </p>
-  </section>
-
-  <script>
-    document.getElementById("exp2").innerText = calculateExperience();
-  </script>
-
-  <div class="bg-animation"></div>
-</body>
-</html>
+        <h2>DevOps Engineer</h
